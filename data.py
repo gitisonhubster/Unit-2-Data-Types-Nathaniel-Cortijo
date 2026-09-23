@@ -1,0 +1,5 @@
+origninal_price=int((input("how much are you paying?")))
+Tip_amount=int((input("what percent are you tiping")))
+print("Original Price:" , origninal_price)
+print("Tip:" , Tip_amount)
+print("Total:" , origninal_price+(origninal_price*(Tip_amount/100)))
