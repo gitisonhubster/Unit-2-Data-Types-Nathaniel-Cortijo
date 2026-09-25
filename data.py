@@ -36,8 +36,27 @@ print(z) """
 y = len(x.split( ))
 print(y) """
 
-day_of_week = input("what day is it? ")
+""" day_of_week = input("what day is it? ")
 if day_of_week == "Friday":
-    print("correct")
+    print("correct") 
 else:
-    print("incorrect")
+    print("incorrect") """
+
+""" x = "test"
+print(f"hello {x}") """
+
+""" temp = 75
+if temp > 68:
+    print('warm')
+elif temp == 68:
+    print('perfect')
+else:
+    print('cold') """
+def divide(x,y):
+    return(x/y)
+
+x = int(input("gimme a number"))
+if divide(x,2) == float:
+    print("odd")
+elif divide(x,2) == int:
+    print("even")
