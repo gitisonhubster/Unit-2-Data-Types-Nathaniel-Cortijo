@@ -52,11 +52,33 @@ elif temp == 68:
     print('perfect')
 else:
     print('cold') """
-def divide(x,y):
-    return(x/y)
 
-x = int(input("gimme a number"))
-if divide(x,2) == float:
-    print("odd")
-elif divide(x,2) == int:
+
+""" x = str(float(input("gimme a number"))/2)
+even = ".0"
+odd = ".5"
+if even in x:
     print("even")
+elif odd in x:
+    print("odd") """
+
+""" x = int(input("gimme a number"))
+if x % 2 == 0:
+    print("even")
+else:
+    print("odd") """
+
+Tip_amount = 0
+origninal_price=int((input("How much are you paying?")))
+service_quality=input("How good was your service?")
+if service_quality == "bad" :
+    Tip_amount = 0
+elif service_quality == "okay" :
+    Tip_amount = 15
+elif service_quality == "good" :
+    Tip_amount = 20
+elif service_quality == "great" :
+    Tip_amount = 25
+print("Original Price: $" , origninal_price)
+print("Tip:" , Tip_amount,"%")
+print("Total: $" , origninal_price+(origninal_price*(Tip_amount/100)))
