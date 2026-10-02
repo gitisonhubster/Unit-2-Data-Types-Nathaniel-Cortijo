@@ -68,7 +68,7 @@ if x % 2 == 0:
 else:
     print("odd") """
 
-Tip_amount = 0
+""" Tip_amount = 0
 origninal_price=int((input("How much are you paying?")))
 service_quality=input("How good was your service?")
 if service_quality == "bad" :
@@ -81,4 +81,14 @@ elif service_quality == "great" :
     Tip_amount = 25
 print("Original Price: $" , origninal_price)
 print("Tip:" , Tip_amount,"%")
-print("Total: $" , origninal_price+(origninal_price*(Tip_amount/100)))
+print("Total: $" , origninal_price+(origninal_price*(Tip_amount/100))) """
+
+def factor(x):
+    factors = []
+    for i in int(x):
+        if x % i == 0:
+            factors.append(i)
+    return(factors)
+
+y = float(input("number you want to factor"))
+print(factor(y))
