@@ -85,10 +85,11 @@ print("Total: $" , origninal_price+(origninal_price*(Tip_amount/100))) """
 
 def factor(x):
     factors = []
-    for i in int(x):
+    for i in x:
         if x % i == 0:
             factors.append(i)
     return(factors)
 
-y = float(input("number you want to factor"))
-print(factor(y))
+y = input("number you want to factor")
+print(factor(int(y))
+)
