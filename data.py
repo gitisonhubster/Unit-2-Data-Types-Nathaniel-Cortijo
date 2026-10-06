@@ -84,12 +84,17 @@ print("Tip:" , Tip_amount,"%")
 print("Total: $" , origninal_price+(origninal_price*(Tip_amount/100))) """
 
 def factor(x):
+    y = int(x)
+    gleeb = 1
     factors = []
-    for i in x:
-        if x % i == 0:
+    for i in range(y):
+        if i == 0:
+            gleeb = i+1
+        else:
+            gleeb = i
+        if y % gleeb == 0:
             factors.append(i)
     return(factors)
 
 y = input("number you want to factor")
-print(factor(int(y))
-)
+print(factor(y))
