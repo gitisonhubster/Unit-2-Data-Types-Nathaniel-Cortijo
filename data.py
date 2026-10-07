@@ -95,6 +95,18 @@ def factor(x):
         if y % gleeb == 0:
             factors.append(i)
     return(factors)
-
+""" 
 y = input("number you want to factor")
-print(factor(y))
+print(factor(y)) """
+
+def gcf(x,y):
+    factors = factor(x) + factor(y)
+    cf = []
+    for i in range(max(factors)):
+        if  factors.count(i) > 1:
+            cf.append(i)
+    return(max(cf))
+
+a = input("first number you want to factor")
+b = input("second number you want to factor")
+print(gcf(a,b))
